@@ -1,0 +1,38 @@
+*{padding: 0px; margin: 0px}
+
+body{
+    text-align: center;
+}
+
+#content{
+    width: 50%;
+    margin: 1% auto;
+    height: 100%;
+    text-align: right;
+}
+
+.inner{
+    margin-right: 20%;
+    margin-top: 8%;
+}
+
+.input{
+    margin-left: 5%;
+    height: 30px;
+    width: 60%;
+}
+
+.ta{
+    resize: none;
+    height: 60px;
+}
+
+
+#submit{
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    margin-right: 20%;
+}

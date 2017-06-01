@@ -1,0 +1,23 @@
+{% extends 'prescription.html' %}
+{% load staticfiles %}
+{% block title %}
+    Medicine Operation
+{% endblock %}
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'css/medicine-operation.css' %}">
+{% endblock %}
+{% block custom_js %}
+    <script type="application/javascript" src="{% static 'js/medicine-operation.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <div id="content">
+        <div class="inner"><label>病名*:</label><input maxlength="50" class="input" name="diseaseName" type="text"></div>
+        <div class="inner"><label>主诉*:</label><textarea maxlength="50" class="input ta" name="patientContent"></textarea></div>
+        <div class="inner"><label>向量:</label><textarea maxlength="50" class="input ta" name="contentVec"></textarea><br></div>
+        <div class="inner"><label>主方名*:</label><input maxlength="50" class="input" name="prescriptionName"><br></div>
+        <div class="inner"><label>药方*:</label><textarea maxlength="50" class="input ta" name="prescriptions"></textarea><br></div>
+        <div class="inner"><label>开方原因*:</label><textarea maxlength="50" class="input ta" name="prescriptionsReason"></textarea><br></div>
+        <div class="inner"><label>来源*:</label><input maxlength="100" class="input" name="sourceFrom"><br></div>
+            <input type="submit" class="btn btn-primary" id="submit" value="提交">
+    </div>
+{% endblock %}

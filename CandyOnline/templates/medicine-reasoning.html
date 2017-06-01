@@ -1,0 +1,24 @@
+{% extends 'prescription.html' %}
+{% load staticfiles %}
+{% block title %}
+    Medicine Reasoning
+{% endblock %}
+{% block custom_js %}
+    <script type="application/javascript" src="{% static 'js/prescription-hint.js' %}"></script>
+{% endblock %}
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'css/prescription-hint.css' %}">
+{% endblock %}
+{% block content %}
+
+    <div id="content">
+        <textarea id="free"></textarea>
+        <br>
+        <button id="finish" class="btn btn-primary">完成</button>
+        <div id="hidden">
+            <div id="dynamic"></div>
+            <button id="submit" class="btn btn-primary">提交</button>
+        </div>
+    </div>
+
+{% endblock %}
